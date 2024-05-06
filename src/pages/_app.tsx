@@ -19,7 +19,8 @@ export default function App({ Component, pageProps }: AppProps) {
         )}
     >
     {/*  Page wrapper start  */}
-        <div>
+        <div> 
+            <ToastContainer limit={1} position='top-right' autoClose={5000} />
             {/* Header */}
             <Header/>
 
@@ -29,7 +30,6 @@ export default function App({ Component, pageProps }: AppProps) {
             {/*    </div>*/}
             {/*</header>*/}
             <div>
-                <ToastContainer limit={1} position='top-right' autoClose={5000} />
                 <Component {...pageProps} />
             </div>
         </div>

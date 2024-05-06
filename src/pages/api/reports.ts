@@ -23,7 +23,7 @@ export default async function handler(req: NextApiRequest,
 
   axios.request(config)
   .then((response) => {
-    console.log(JSON.stringify(response.data));
+    // console.log(JSON.stringify(response.data));
     res.status(response.status).json(response.data)
   })
   .catch((error) => {

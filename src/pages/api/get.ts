@@ -12,8 +12,8 @@ export default async function handler(req: NextApiRequest, res: NextApiResponse)
 
     // Send response with the data received from the API
     const dataobj = res.status(response.status).json(response.data);
-    console.log("first getting data")
-    console.log(response.data)
+    
+    // console.log(response.data)
   } catch (error: any) {
     // Handle errors
     console.error(error);

@@ -4,10 +4,6 @@ import Link from "next/link";
 
 const Links = [
     {
-        name: 'Home',
-        url: '/',
-    },
-    {
         name: 'Reports',
         url: '/',
     },
