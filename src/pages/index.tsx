@@ -21,7 +21,8 @@ export default function Home() {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await axios.get<Welcome>('http://161.35.6.91/bongaSMSReports/requests.php');
+                const response = await axios.get<Welcome>('/api/get');
+                // const response = await axios.get<Welcome>('http://161.35.6.91/bongaSMSReports/requests.php');
                 setHome(response.data);
             } catch (error) {
                 console.error("Error fetching data:", error);
