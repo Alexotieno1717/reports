@@ -4,6 +4,7 @@ import { Inter as FontSans } from "next/font/google"
 import {cn} from "@/lib/utils";
 import Header from "@/components/Header";
 import { ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 const fontSans = FontSans({
     subsets: ["greek-ext"],
